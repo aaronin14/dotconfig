@@ -1,8 +1,8 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: "Ubuntu Nerd Font";
-    font-size: 13px;
+    font-family: "Mononoki Nerd Font";
+    font-size: 18px;
     min-height: 0;
 }
 
@@ -13,7 +13,7 @@ window#waybar {
 
 #window {
     font-weight: bold;
-    font-family: "Ubuntu";
+    font-family: "Mononoki";
 }
 /*
 #workspaces {
@@ -22,7 +22,7 @@ window#waybar {
 */
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 6px;
     background: transparent;
     color: white;
     border-top: 2px solid transparent;
@@ -39,7 +39,7 @@ window#waybar {
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
-    padding: 0 3px;
+    padding: 0 8px;
     margin: 0 2px;
 }
 
@@ -90,10 +90,6 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-}
-
-#custom-spotify {
-    color: rgb(102, 220, 105);
 }
 
 #tray {
