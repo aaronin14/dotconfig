@@ -1,0 +1,1 @@
+sudo pacman -S --noconfirm --needed neovim luarocks lua51 nodejs npm fd ripgrep
