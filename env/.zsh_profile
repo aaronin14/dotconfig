@@ -1,0 +1,26 @@
+fastfetch
+
+VIM="nvim"
+
+export XDG_CONFIG_HOME=$HOME/.config
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:/usr/local/go/bin
+
+# Where should I put you?
+bindkey -s ^f "tmux-sessionizer\n"
+
+# Simple Pomodoro Timer CLI
+function pomo() {
+    arg1=$1
+    shift
+    args="$*"
+
+    min=${arg1:?Example: pomo 15 Take a break}
+    sec=$((min * 60))
+    msg="${args:?Example: pomo 15 Take a break}"
+
+    while true; do
+        date '+%H:%M' && sleep "${sec:?}" && notify-send -u critical -t 0 -a pomo "${msg:?}"
+    done
+}

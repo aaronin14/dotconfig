@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+GITDIR="$HOME/personal/second-brain"
+
+cd "$GITDIR"
+
+CHANGES_EXIT="$(git status --porcelain | wc -l)"
+
+if [ "$CHANGES_EXIT" -eq 0 ]; then
+	exit 0
+fi
+
+git pull
+git add .
+git commit -q -m "From rinspiron: $(date +"%Y-%m-%d %H:%M:%S")"
+git push -q
