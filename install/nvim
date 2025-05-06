@@ -1,1 +1,4 @@
 sudo pacman -S --noconfirm --needed neovim luarocks lua51 nodejs npm fd ripgrep
+
+
+git clone git@github.com:aaronin14/nvim-config $HOME/personal/dev/env/.config/nvim
