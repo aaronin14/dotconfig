@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+sudo pacman -S --needed --noconfirm obsidian
+mkdir -p $HOME/personal/
+git clone git@github.com:aaronin14/second-brain $HOME/personal/second-brain
