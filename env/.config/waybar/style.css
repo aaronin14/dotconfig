@@ -38,7 +38,7 @@ window#waybar {
     border-bottom: 3px solid white;
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
+#clock, #battery, #backlight, #cpu, #memory, #network, #pulseaudio, #custom-power, #custom-bluetooth, #tray {
     padding: 0 8px;
     margin: 0 2px;
 }
