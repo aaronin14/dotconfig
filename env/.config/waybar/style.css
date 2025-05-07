@@ -30,11 +30,6 @@ window#waybar {
     color: rgb(24, 22, 22);
 }
 
-#mode {
-    background: #64727D;
-    border-bottom: 3px solid white;
-}
-
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-power, #custom-bluetooth, #tray {
     padding: 0 8px;
     margin: 0 2px;
@@ -48,7 +43,7 @@ window#waybar {
 }
 
 #battery icon {
-    color: red;
+    color: rgb(228, 104, 118);
 }
 
 #battery.charging {
@@ -56,13 +51,13 @@ window#waybar {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: black;
+        background-color: rgb(197, 201, 197);
+        color: rgb(24, 22, 22);
     }
 }
 
 #battery.warning:not(.charging) {
-    color: white;
+    color: rgb(197, 201, 197);
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -80,7 +75,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #f53c3c;
+    background: rgb(228, 104, 118);
 }
 
 #pulseaudio {
