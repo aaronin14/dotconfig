@@ -6,4 +6,4 @@ sudo pacman -S --needed --noconfirm hyprland waybar xdg-desktop-portal-hyprland 
 sudo pacman -S --needed --noconfirm dunst dolphin wofi polkit-kde-agent grim slurp hyprpaper hyprlock
 paru -S wlogout
 sudo pacman -S --needed --noconfirm go fzf fastfetch brightnessctl wl-clipboard cronie
-sudo pacman -S --needed --noconfirm gimp obs-studio vlc
+sudo pacman -S --needed --noconfirm gimp obs-studio vlc feh libreoffice-fress
