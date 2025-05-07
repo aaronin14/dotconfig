@@ -8,29 +8,26 @@
 
 window#waybar {
     background: transparent;
-    color: white;
+    color: #181616 ;
 }
 
 #window {
     font-weight: bold;
     font-family: "Mononoki";
 }
-/*
+
 #workspaces {
     padding: 0 5px;
 }
-*/
 
 #workspaces button {
-    padding: 0 6px;
+    padding: 0 5px;
     background: transparent;
-    color: white;
-    border-top: 2px solid transparent;
+    color: rgb(166, 166, 156);
 }
 
-#workspaces button.focused {
-    color: #c9545d;
-    border-top: 2px solid #c9545d;
+#workspaces button.active {
+    color: rgb(24, 22, 22);
 }
 
 #mode {
