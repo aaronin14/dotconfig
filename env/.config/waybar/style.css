@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 0;
+    border-radius: 5;
     font-family: "Mononoki Nerd Font";
     font-size: 18px;
     min-height: 0;
@@ -8,22 +8,27 @@
 
 window#waybar {
     background: transparent;
-    color: #181616 ;
+    color: rgb(24, 22, 22);
 }
 
 #window {
     font-weight: bold;
     font-family: "Mononoki";
+    margin: 0 2px;
+    padding: 2px 5px;
+    background: rgba(24, 22, 22, 0.3);
 }
 
 #workspaces {
-    padding: 0 5px;
+    padding: 2px 5px;
+    background: rgba(24, 22, 22, 0.3);
+    margin: 0 2px;
 }
 
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: rgb(166, 166, 156);
+    color: rgb(196, 178, 138);
 }
 
 #workspaces button.active {
@@ -31,8 +36,9 @@ window#waybar {
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-power, #custom-bluetooth, #tray {
-    padding: 0 8px;
+    padding: 2 8px;
     margin: 0 2px;
+    background: rgba(24, 22, 22, 0.3);
 }
 
 #clock {
@@ -57,7 +63,7 @@ window#waybar {
 }
 
 #battery.warning:not(.charging) {
-    color: rgb(197, 201, 197);
+    color: rgb(196, 116, 110);
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -75,7 +81,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: rgb(228, 104, 118);
+    background: rgba(228, 104, 118, 0.6);
 }
 
 #pulseaudio {
@@ -87,3 +93,5 @@ window#waybar {
 #tray {
 }
 
+#custom-power {
+}
