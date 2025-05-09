@@ -1,13 +1,17 @@
 #!/usr/bin/bash
 
+echo "Neovim..."
 pushd ~/personal/dev/env/.config/nvim
 git add .
 git commit -m 'automated commit'
 git push
 popd
+echo "Done"
 
+echo "Dev..."
 pushd ~/personal/dev
 git add .
 git commit -m 'automated commit'
 git push
 popd
+echo "Done"
