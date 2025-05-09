@@ -31,12 +31,12 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: rgba(197, 201, 197, 0.8);
+    background: rgba(197, 201, 197, 0.4);
 }
 
 #workspaces button:hover {
     border: 0;
-    background: rgba(197, 201, 197, 0.4);
+    background: rgba(197, 201, 197, 0.2);
 }
 
 #clock, #battery, #cpu, #memory, #temperature, #network, #pulseaudio, #custom-power, #custom-bluetooth, #tray {
