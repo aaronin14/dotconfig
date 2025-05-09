@@ -1,14 +1,14 @@
 * {
-    border: none;
+    border: 0;
     border-radius: 5;
     font-family: "Mononoki Nerd Font";
     font-size: 18px;
     min-height: 0;
+    color: rgb(196, 178, 138);
 }
 
 window#waybar {
     background: transparent;
-    color: rgb(24, 22, 22);
 }
 
 #window {
@@ -16,29 +16,33 @@ window#waybar {
     font-family: "Mononoki";
     margin: 0 2px;
     padding: 2px 5px;
-    background: rgba(24, 22, 22, 0.3);
+    background: rgba(24, 22, 22, 0.8);
 }
 
 #workspaces {
     padding: 2px 5px;
-    background: rgba(24, 22, 22, 0.3);
     margin: 0 2px;
+    background: rgba(24, 22, 22, 0.8);
 }
 
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: rgb(196, 178, 138);
 }
 
 #workspaces button.active {
-    color: rgb(24, 22, 22);
+    background: rgba(197, 201, 197, 0.8);
 }
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-power, #custom-bluetooth, #tray {
+#workspaces button:hover {
+    border: 0;
+    background: rgba(197, 201, 197, 0.4);
+}
+
+#clock, #battery, #cpu, #memory, #temperature, #network, #pulseaudio, #custom-power, #custom-bluetooth, #tray {
     padding: 2 8px;
     margin: 0 2px;
-    background: rgba(24, 22, 22, 0.3);
+    background: rgba(24, 22, 22, 0.8);
 }
 
 #clock {
