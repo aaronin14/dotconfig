@@ -88,8 +88,8 @@
     },
     "pulseaudio": {
         "format": "{volume}% {icon} ",
-        "format-bluetooth": "{volume}% {icon} ",
-        "format-muted": " ",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-muted": "",
         "format-icons": {
             "headphones": "",
             "handsfree": "",
@@ -101,14 +101,14 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/power": {
-        "format" : "⏻ ",
-		"tooltip": false,
-		"on-click": ""
-    },
     "custom/bluetooth": {
         "format" : "",
 		"tooltip": false,
 		"on-click": "blueberry"
-    }
+    },
+    "custom/power": {
+        "format" : "⏻",
+		"tooltip": false,
+		"on-click": ""
+    },
 }
