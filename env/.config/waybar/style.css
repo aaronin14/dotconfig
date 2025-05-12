@@ -25,14 +25,14 @@ window#waybar.empty #window {
 }
 
 #workspaces {
-    padding: 2px 5px;
+    padding: 2px 5px 2px 3px ;
     margin: 0 2px;
     background: rgba(24, 22, 22, 0.9);
     border: 2px solid rgba(196, 178, 138, 0.9);
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 1px 8px 1px 2px;
     background: transparent;
 }
 
@@ -41,7 +41,7 @@ window#waybar.empty #window {
 }
 
 #workspaces button:hover {
-    border: 0;
+    border: none;
     background: rgba(197, 201, 197, 0.2);
 }
 
