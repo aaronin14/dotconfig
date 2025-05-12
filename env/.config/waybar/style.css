@@ -19,6 +19,10 @@ window#waybar {
     background: rgba(24, 22, 22, 0.9);
     border: 2px solid rgba(196, 178, 138, 0.9);
 }
+window#waybar.empty #window {
+    background: none;
+    border: none;
+}
 
 #workspaces {
     padding: 2px 5px;
