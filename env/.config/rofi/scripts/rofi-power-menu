@@ -9,6 +9,8 @@
 #
 # See README.md for more information.
 
+echo "Power menu triggered at $(date)" >> /tmp/hyprland_power_menu.log
+
 set -e
 set -u
 
@@ -38,7 +40,7 @@ icons[shutdown]="\Uf0425"
 icons[cancel]="\Uf0156"
 
 declare -A actions
-actions[lockscreen]="loginctl lock-session ${XDG_SESSION_ID-}"
+actions[lockscreen]="hyprlock"
 #actions[switchuser]="???"
 actions[logout]="loginctl terminate-session ${XDG_SESSION_ID-}"
 actions[suspend]="systemctl suspend"

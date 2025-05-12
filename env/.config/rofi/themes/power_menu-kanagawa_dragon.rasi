@@ -1,85 +1,85 @@
 * {
-  background : #181616;
-  foreground : #c5c9c5;
+    background : #181616;
+    foreground : #c5c9c5;
 
-  black :   #0d0c0c;
-  red :     #c4746e;
-  green :   #8a9a7b;
-  yellow :  #c4b28a;
-  blue :    #8ba4b0;
-  magenta : #a292a3;
-  cyan :    #8ea4a2;
-  white :   #c8c093;
+    black :   #0d0c0c;
+    red :     #c4746e;
+    green :   #8a9a7b;
+    yellow :  #c4b28a;
+    blue :    #8ba4b0;
+    magenta : #a292a3;
+    cyan :    #8ea4a2;
+    white :   #c8c093;
 
-  black-bright : #a6a69c;
-  white-bright : #c5c9c5;
+    black-bright : #a6a69c;
+    white-bright : #c5c9c5;
 
-  /* Default background color */
-  background-color: transparent;
-  font: "Mononoki Nerd Font 16";
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
+    /* Default background color */
+    background-color: transparent;
+    font: "Mononoki Nerd Font 18";
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
 }
 
-
 window {
-  border-color: @background;
-  border-radius: 10px;
-  background-color: @background;
-  text-color: @foreground;
-  width: 300px;
+    background-color: @background;
+    width: 350px;
+    border: 2px solid;
+    border-color: @yellow;
+    border-radius: 8px;
 }
 
 mainbox {
-  padding: 8px;
-  children: [inputbar, listview];
+    padding: 2px 4px;
+    children: [inputbar, listview];
 }
 
 inputbar {
-  padding: 8px;
-  border: 0px;
-  border-radius: 8px;
-  children: [prompt, entry];
+    padding: 4px 8px;
+    border: none;
+    border-radius: 8px;
+    text-color: @yellow;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @yellow;
 }
 
 entry {
-  placeholder: "Search";
+    text-color: @yellow;
+    placeholder: "Search";
 }
 
 listview {
-  padding: 0.5em;
-  border-color: @background;
-  border-radius: 8px;
-  background-color: @background;
-  columns: 1;
-  lines: 6;
-  scrollbar: false;
+    columns: 1;
+    lines: 6;
+    scrollbar: false;
+    border-radius: 8px;
+    border-color: @background;
+    background-color: @background;
 }
 
 element {
-  background: @black;
-  children: [ element-icon, element-text ];
+    border:  0px;
+    border-color: @background;
+    border-radius: 8px;
+    padding: 3px;
+    background-color: @background;
+    vertical-align: 0.5;
+    children: [ element-icon, element-text ];
 }
 
 element,element-text,element-icon, button {
     cursor: pointer;
 }
 
-element {
-    border:  0px;
-    border-radius: 8px;
-    padding: 3px;
-    border-color: @background;
-    background-color: @background;
-    vertical-align: 0.5;
-}
 
 element-text {
     background-color: @black-bright;
     text-color:       @black;
-    font: "Mononoki Nerd Font 13";
     margin:   0px 0px;
     vertical-align: 0.5;
 }

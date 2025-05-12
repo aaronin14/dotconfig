@@ -109,6 +109,6 @@
     "custom/power": {
         "format" : "⏻",
 		"tooltip": false,
-		"on-click": ""
+		"on-click": "rofi -show powermenu -modi powermenu:~/.config/rofi/scripts/rofi-power-menu -config ~/.config/rofi/themes/power_menu-kanagawa_dragon.rasi"
     },
 }
