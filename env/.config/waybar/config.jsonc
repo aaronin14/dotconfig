@@ -6,6 +6,7 @@
     // "width": 1366, // Waybar width
     // Choose the order of the modules
     "modules-left": [
+        "custom/power",
         "hyprland/workspaces",
     ],
     "modules-center": [
@@ -15,13 +16,11 @@
         "tray",
         "pulseaudio",
         "network",
-        "custom/bluetooth",
         "temperature",
         "cpu",
         "memory",
         "battery",
         "clock",
-        "custom/power",
     ],
 
     "hyprland/workspaces": {
