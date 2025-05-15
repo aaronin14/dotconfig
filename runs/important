@@ -7,3 +7,4 @@ sudo pacman -S --needed --noconfirm dunst dolphin rofi-wayland polkit-kde-agent 
 paru -S wlogout
 sudo pacman -S --needed --noconfirm go fzf fastfetch brightnessctl wl-clipboard cronie
 sudo pacman -S --needed --noconfirm gimp obs-studio vlc feh libreoffice-fress
+sudo pacman -S --needed --noconfirm bluez blueman
